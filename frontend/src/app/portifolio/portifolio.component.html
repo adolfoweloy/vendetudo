@@ -1,0 +1,22 @@
+<article class="collection">
+  <h3>Lista de coisas disponíveis</h3>
+
+  <section class="items">
+      <div *ngFor="let item of items">
+    
+          <article class="wrapper">
+            <div class="portrait">
+              <img src="{{item.image}}">
+            </div>
+            <section class="content">
+              <h4>{{item.title}}</h4>
+              <label>{{item.description}}</label>
+              <div class="price">R$ {{item.price}}</div>
+              <button>Reservar</button>
+            </section>
+          </article>
+      
+        </div>      
+  </section>
+
+</article>
