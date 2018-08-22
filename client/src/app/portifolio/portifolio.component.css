@@ -52,6 +52,28 @@
     display: block;
 }
 
+.collection .item a {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.collection .item a:hover {
+    color: #56d690;
+}
+
+.collection .item a:visited {
+    color: rgb(32, 148, 32);
+}
+
+.collection .item a:visited:hover {
+    color: #56d690;
+}
+
+.collection .item a:active {
+    color: black;
+}
+
 .collection .item .price {
     color: rgb(32, 148, 32);
     font-weight: bold;

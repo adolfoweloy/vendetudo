@@ -9,7 +9,9 @@
         <div class="portrait">
           <img src="{{item.image}}">
         </div>
-        <h4>{{item.title}}</h4>
+        <h4>
+          <a routerLink="/product/{{item.id}}">{{item.title}}</a>
+        </h4>
         <div class="description">{{item.description}}</div>
         <div class="price">{{item.price | currency:'BRL':'symbol':undefined:'pt-BR'}}</div>
         <button>Reservar</button>
