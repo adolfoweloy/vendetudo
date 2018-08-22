@@ -2,21 +2,21 @@
   <h3>Lista de coisas disponíveis</h3>
 
   <section class="items">
-      <div *ngFor="let item of items">
-    
-          <article class="wrapper">
-            <div class="portrait">
-              <img src="{{item.image}}">
-            </div>
-            <section class="content">
-              <h4>{{item.title}}</h4>
-              <label>{{item.description}}</label>
-              <div class="price">R$ {{item.price}}</div>
-              <button>Reservar</button>
-            </section>
-          </article>
-      
-        </div>      
+
+    <article class="item" *ngFor="let item of items">
+
+      <div class="item-container">
+        <div class="portrait">
+          <img src="{{item.image}}">
+        </div>
+        <h4>{{item.title}}</h4>
+        <div class="description">{{item.description}}</div>
+        <div class="price">{{item.price | currency:'BRL':'symbol':undefined:'pt-BR'}}</div>
+        <button>Reservar</button>
+      </div>
+
+    </article>
+
   </section>
 
 </article>

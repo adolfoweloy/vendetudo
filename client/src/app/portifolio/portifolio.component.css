@@ -1,66 +1,77 @@
 .collection {
     font-family: Arial, Helvetica, sans-serif;
+    padding: 1em;
+}
+
+.collection h3 {
+    margin-top: unset;
 }
 
 .collection .items {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
+}
+
+/* div container */
+.collection .items .item-container {
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: space-between;
+    height: 100%;
 }
 
-.collection .items div {
-    width: fit-content;
+.collection .items .item-container * {
     display: block;
-    
 }
 
-.collection h3 {
-    color: grey;
-}
-.wrapper {
-    padding: 1em;
+/* article */
+.collection .item {
+    width: 14em;
+    margin-right: 2%;
     background-color: #f7f4e1;
-    margin: 1em;
+    padding: 1em;
+    margin-bottom: 1em;
 }
 
-.wrapper img {
+.collection .item img {
     max-width: 100%;
-    max-height: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.wrapper .portrait {
-    height: 300px;
-    width: 300px;
+.collection .item .portrait {
+    height: 15em;
+    width: 100%;
+    margin-bottom: 1em;
 }
 
-.wrapper h4 {
-    color: grey;
-    margin: unset;
+.collection .item h4 {
+    margin-top: unset;
+    display: block;
 }
 
-.wrapper .price {
+.collection .item .price {
     color: rgb(32, 148, 32);
     font-weight: bold;
-    margin-top: 0.5em;
+    margin-top: 1.5em;
     margin-bottom: 0.5em;
 }
 
-.wrapper textarea {
-    font-size: 16px;
-    width: 90%;
-    display: block;
-    padding-bottom: .3em;
-    box-shadow: 0 1px 0 0 rgb(131, 131, 131);
-    color: lightslategrey;
-    outline: none;
-    border: none;
+.collection .item .description {
+    height: 5em;
 }
 
-.wrapper button {
+.collection .item button {
     border: none;
     background-color: #ffc526;
-    padding: 0.3em 2em 0.5em 2em;
+    padding: 0.9em 3em 1em 3em;
     font-weight: bold;
     color: black;
-    margin-top: 2em;
+    cursor: pointer;
+}
+
+.collection .item button:hover {
+    background-color: #56d690;
 }
